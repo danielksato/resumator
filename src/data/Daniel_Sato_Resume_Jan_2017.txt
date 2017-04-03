@@ -1,0 +1,66 @@
+﻿D. Sato
+Daniel Sato
+github.com/pretzelface
+linkedin.com/in/dksato
+	Austin, TX
+512-417-0239
+dksato@gmail.com
+	
+
+Technical Skills
+________________
+
+
+Strong: React, RxJS, DraftJS, Immutable, Radium, Backbone, jQuery
+Experienced: React Native, PostgreSQL, Meteor, Angular, Node, Express, MongoDB
+
+
+Professional Experience
+________________
+
+
+Bloomfire, Austin, TX
+Front-end Engineer: 2016 - present
+* Primarily focused on front-end development in React and RxJS.
+* Maintained and extended legacy Backbone codebase on top of Ruby on Rails.
+* Worked closely with design and product teams to achieve a consistent user experience on major user-facing features.
+* Paired with senior developers on key components in DraftJS.
+* Drove efforts toward adopting TDD practices for front-end development.
+
+
+Macmillan Publishing, Austin, TX
+Senior Teaching and Learning Representative: 2014 - 2015
+* Achieved the highest Fall 2014 revenue on a 25-person inside sales team, reaching over 6000 students per semester. 
+Account Manager (Sapling Learning, pre-acquisition) - 2010 - 2014
+* Consistently achieved ambitious semester sales goals which targeted over 100% growth.
+Contract Account Manager (Sapling Learning, pre-acquisition) - 2009 - 2010
+* Generated and qualified leads from trade shows, conferences, and cold-calls.
+
+
+Houghton Mifflin Harcourt, Austin, TX
+Associate Editor - 2007 - 2008
+* Developed instruction materials for high school chemistry and middle school physical science.
+
+
+Software Engineering Projects
+________________
+
+
+Minnow | Full-Stack Developer | Collaborative trip planning and expense-sharing app | www.minnow.pw
+* Developed a reactive front-end component for image storage using React on top of Meteor.
+* Used Meteor’s Cordova integration to create and debug native Android and iOS apps.
+Eureka | Scrum Master & Back-End Developer, Team of 4 | Link-sharing app with voting, comments, and keyword tagging
+* Wrote comments and user/link deletion functionality in Node/Express and Mongoose with unit testing in Mocha/Chai.
+Pegasys | Scrum Master & Front-End Developer, Team of 4 | Carpooling app matching users by location, destination, and route
+* Built route analysis and user messaging using Angular and Google Maps API.
+Creepster | Full-Stack Developer | Photo-sharing based dating and messaging app
+* Created and presented a photo-sharing, voting, and messaging app as a solo project within 36-hour deadline.
+* Designed complete front-end interface including signup, voting, and messaging using Backbone and jQuery, later rewritten in React.
+
+
+Education
+________________
+
+
+Hack Reactor - 2016: Advanced software engineering immersive.
+The Evergreen State College, Olympia, WA - 2006: BS & BA in chemistry, substantial coursework in biology.
