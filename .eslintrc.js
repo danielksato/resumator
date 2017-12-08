@@ -1,11 +1,11 @@
 module.exports = {
-	// extends: 'airbnb',
+	extends: 'airbnb',
 	plugins: ['prettier'],
 	rules: {
 		'react/jsx-filename-extension': 'off',
-		'react/no-array-index-key': 'off',
+		'react/no-array-index-key': 'off'
 	},
 	globals: {
-		fetch: false,
-	},
+		fetch: false
+	}
 };
