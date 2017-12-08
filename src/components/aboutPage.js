@@ -1,14 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component, PropTypes as PT } from 'react';
 
 export default class AboutPage extends Component {
-
-  renderPhoto () {
+  renderPhoto() {
     return this.props.image ? (
       <div className="headshot-container">
-        <img
-          className="headshot"
-          src={this.props.image}
-        />
+        <img className="headshot" src={this.props.image} />
       </div>
     ) : null;
   }
@@ -17,7 +13,7 @@ export default class AboutPage extends Component {
     return <div>{this.props.about.map((text, index) => <p key={`about-${index}`}>{text}</p>)}</div>;
   }
 
-  render () {
+  render() {
     return (
       <div>
         {this.renderPhoto()}
@@ -26,3 +22,13 @@ export default class AboutPage extends Component {
     );
   }
 }
+
+AboutPage.propTypes = {
+  image: PT.string.isRequired(),
+  about: PT.arrayOf(PT.string).isRequired(),
+};
+
+AboutPage.defaultProps = {
+  image: '',
+  about: [''],
+};

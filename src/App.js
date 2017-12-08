@@ -1,54 +1,52 @@
-import React, {Component} from 'react';
-import Navigation from './components/navigation.js';
-import Page from './components/page.js';
+import React, { Component } from 'react';
+import Navigation from './components/navigation';
+import Page from './components/page';
 import './App.css';
 
 class App extends Component {
-  constructor () {
+  constructor() {
     super();
     this.state = {
       currentPage: 0,
-      resume: null
-    }
+      resume: null,
+    };
   }
 
-  get navHeadings () {
-    const {resume} = this.state;
-    return resume ? resume.pages.map((page) => page.name) : [];
+  componentDidMount() {
+    fetch('./resume.json')
+      .then(res => res.json())
+      .then(resume => this.setState({ resume }));
   }
 
-  get currentPage () {
-    const {currentPage, resume} = this.state;
+  onPageChange(n) {
+    this.setState({ currentPage: n });
+  }
+
+  get navHeadings() {
+    const { resume } = this.state;
+    return resume ? resume.pages.map(page => page.name) : [];
+  }
+
+  get currentPage() {
+    const { currentPage, resume } = this.state;
     return resume.pages[currentPage];
   }
 
-  componentDidMount () {
-    fetch('./resume.json')
-      .then((res) => res.json())
-      .then((resume) => this.setState({resume}))
-  }
-
-  onPageChange (n) {
-    this.setState({currentPage: n});
-  }
-
-  renderNav () {
-    const {navHeadings, state} = this;
-    const {currentPage} = state;
+  renderNav() {
+    const { navHeadings, state } = this;
+    const { currentPage } = state;
 
     return (
-      <Navigation
-        {...{currentPage, navHeadings, onPageChange: (n) => this.onPageChange(n)}}
-      />
+      <Navigation {...{ currentPage, navHeadings, onPageChange: n => this.onPageChange(n) }} />
     );
   }
 
-  renderCurrentPage () {
-    const {currentPage, resume} = this.state;
+  renderCurrentPage() {
+    const { currentPage, resume } = this.state;
     return resume ? <Page {...resume.pages[currentPage]} /> : null;
   }
 
-  render () {
+  render() {
     return (
       <div>
         {this.renderNav()}
