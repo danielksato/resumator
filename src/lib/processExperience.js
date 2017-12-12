@@ -1,4 +1,3 @@
-
 const getHeading = (experience) => {
   const {
     name, location, date, dates, role, team, url,
@@ -10,17 +9,15 @@ const getHeading = (experience) => {
     .join(' |\u200B ');
 };
 
-const getBullets = experience => experience.bullets || null;
-
 const processExperience = (experience) => {
-  const { description } = experience;
-  const getRoles = experience => (experience.roles ? experience.roles.map(processExperience) : null);
+  const { description, roles } = experience;
+  const processedRoles = roles ? roles.map(processExperience) : null;
 
   return {
     description,
     name: getHeading(experience),
-    bullets: getBullets(experience),
-    roles: getRoles(experience),
+    bullets: experience.bullets || null,
+    roles: processedRoles,
   };
 };
 

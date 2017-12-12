@@ -1,4 +1,4 @@
-import React, { Component, PropTypes as PT } from 'react';
+import React, { Component } from 'react';
 
 export default class AboutPage extends Component {
   renderPhoto() {
@@ -22,13 +22,3 @@ export default class AboutPage extends Component {
     );
   }
 }
-
-AboutPage.propTypes = {
-  image: PT.string.isRequired(),
-  about: PT.arrayOf(PT.string).isRequired(),
-};
-
-AboutPage.defaultProps = {
-  image: '',
-  about: [''],
-};
